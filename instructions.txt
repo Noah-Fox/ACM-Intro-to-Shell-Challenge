@@ -1,0 +1,41 @@
+
+**************************************************************
+
+ACM INTRO TO SHELL CHALLENGE
+
+Inside the "challenge/" directory, you will find a moderately 
+complicated file system.
+
+You must analyze the contents of challenge/ and perform the
+following 5 tasks:
+
+1. All files whose title begins with "changeme" should be 
+   renamed to their contents (for example, if a file 
+   challenge/changeme-example.txt contains "newname.txt",
+   rename it to challenge/newname.txt)
+
+2. All files whose title begins with "removeme" should be 
+   deleted.
+
+3. All files whose title begins with "countme" should have 
+   the "countme" substring of the title changed to "sumX",
+   where X is the sum of the numbers in its contents 
+   (for example, if the file challenges/countme-example.txt
+   contains "1 2 3", change it to challenges/sum6-example.txt)
+
+4. If a file ends with ".duplicate", and there is another file
+   in the same directory with the same name (minus the 
+   ".duplicate") and with the same contents, delete the file 
+   (for example, if files example.txt and
+   example.txt.duplicate both contain "hello world", delete
+   example.txt.duplicate)
+
+5. All other files that contain the string $X-TREASURE-CHEST 
+   in their contents, where X is a number >= 1000, should 
+   have ".TREASURE" appended to their title 
+
+Once finished, run the program ./check-solution.sh to check 
+if you have performed all the necessary tasks. It will
+output PASS if you have, and FAIL if you have not.
+
+**************************************************************
